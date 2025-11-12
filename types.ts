@@ -19,6 +19,8 @@ export interface Tool extends Item {
   category: string;
   description: string;
   imageUrl?: string;  // Frontend uses camelCase, maps to 'icon' in DB
+  tags?: string[];     // Tags for categorization
+  rating?: number;     // Rating 1-5
   user_id?: string;
   created_at?: string;
   updated_at?: string;
